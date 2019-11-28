@@ -3,7 +3,7 @@ package ua.dp.ort.homework2;
 public class homework2 {
 	public static final int AREA = 45;
 	public static final int WIDTH = 1020;
-	public static final double SIZEICON = 8.5;
+	public static final int SIZEICON = 9;
 	public static final int LENGTH = 840;
 	public static final int PERIMETR = 267;
 
@@ -39,7 +39,7 @@ public class homework2 {
 		System.out.println(peopleWorld);
 		long trees = 21504450;
 		System.out.println(trees);
-		long pears =500450;
+		long pears = 500450;
 		System.out.println(pears);
 		
 		float frogWeight = 25.5f;
