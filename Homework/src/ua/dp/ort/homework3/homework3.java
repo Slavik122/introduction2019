@@ -63,7 +63,17 @@ public class homework3 {
 //		int a1 = 0b0000_1111_1111;
 //		int b1 = 0b0000_0000_0001;
 //		System.out.println(a1 & b1);
-
+//		int a2 = 0b0000_1010_0101;
+//		System.out.println(Integer.bitCount(a2));
+//		10)
+		int red = 115;
+		int green = 15;
+		int blue = 200;
+		int alfa = 67;
+		System.out.println(Integer.toBinaryString(red));
+		System.out.println(Integer.toBinaryString(green));
+		System.out.println(Integer.toBinaryString(blue));
+		System.out.println(Integer.toBinaryString(alfa));
 	}
 
 }
