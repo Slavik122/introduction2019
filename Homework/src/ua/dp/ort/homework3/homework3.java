@@ -65,7 +65,7 @@ public class homework3 {
 //		System.out.println(a1 & b1);
 //		int a2 = 0b0000_1010_0101;
 //		System.out.println(Integer.bitCount(a2));
-//		10)
+//		10)1.
 //		int[] arr = {115,15,200,67};
 //		String red = Integer.toBinaryString(arr[0]) ;
 //		String green = Integer.toBinaryString(arr[1]);
@@ -75,6 +75,7 @@ public class homework3 {
 //		System.out.print(green);
 //		System.out.print(blue);
 //		System.out.print(alfa);
+//		10)2.
 		
 		
 	}
