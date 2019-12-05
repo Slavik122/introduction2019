@@ -66,15 +66,16 @@ public class homework3 {
 //		int a2 = 0b0000_1010_0101;
 //		System.out.println(Integer.bitCount(a2));
 //		10)
-		int[] arr = {115,15,200,67};
-		String red = Integer.toBinaryString(arr[0]) ;
-		String green = Integer.toBinaryString(arr[1]);
-		String blue = Integer.toBinaryString(arr[2]);
-		String alfa = Integer.toBinaryString(arr[3]);
-		System.out.print(red);
-		System.out.print(green);
-		System.out.print(blue);
-		System.out.print(alfa);
+//		int[] arr = {115,15,200,67};
+//		String red = Integer.toBinaryString(arr[0]) ;
+//		String green = Integer.toBinaryString(arr[1]);
+//		String blue = Integer.toBinaryString(arr[2]);
+//		String alfa = Integer.toBinaryString(arr[3]);
+//		System.out.print(red);
+//		System.out.print(green);
+//		System.out.print(blue);
+//		System.out.print(alfa);
+		
 		
 	}
 
