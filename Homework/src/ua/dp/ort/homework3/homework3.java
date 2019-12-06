@@ -28,9 +28,9 @@ public class homework3 {
 //		System.out.println( width * height + " m^2");
 //		System.out.println(Math.floor( width * height ) + " m^2");
 //		5)
-//		double apples = 11;
-//		double children = 3;
-//		double appleChild = Math.floor(apples / children);
+//		int apples = 11;
+//		int children = 3;
+//		int appleChild = apples / children;
 //		double applesChildren = appleChild * 3;
 //		double applesLeave = apples -  applesChildren;
 //		System.out.println("every child has:  " + appleChild + "  apples");
@@ -39,13 +39,14 @@ public class homework3 {
 //		6)
 //		double distance= 143;
 //		double frogJump = 2.5;
-//		double totalJumps = (distance / frogJump);
+//		double halfDistance = distance / 2;
+//		double totalJumps = ( halfDistance / frogJump);
 //		System.out.println(Math.floor(totalJumps));
 //		7)
-//		int aa = 1999999999;
-//		int bb = 1999999999;
-//		int cc = aa + bb;
-//		System.out.println(Math.rint(cc));
+//		long aa = 1999999999;
+//		long bb = 1999999999;
+//		long cc = aa + bb;
+//		System.out.println(cc);
 //		8)
 //		int numeral = 435679;
 //		int a = numeral / 100000;
@@ -56,20 +57,7 @@ public class homework3 {
 //		int f = numeral / 1 % 10;
 //		int sum = a + b + c + d + e + f;
 //		System.out.println(sum);		
-//		9)
-//		int bite1 = 0b0000_1111_1111;
-//		int bite2 = 0b0000_0000_0000;
-//		System.out.println(bite1 & bite2);
-//		int bite3 = 0b0000_1111_1111;
-//		int bite4 = 0b0000_0000_0001;
-//		System.out.println(bite3 & bite4);
-//		int bite5 = 0b0000_1010_0101;
-//		int bite6 = 0b0000_1111_1111;
-//		System.out.println(Integer.toBinaryString(bite5 & bite6));
-//		int bite7 = 0b0000_0001_1001;
-//		int bite8 = 0b0000_1111_1111;
-//		System.out.println(Integer.toBinaryString(~bite7 & bite8));
-//		
+
 
 		
 
