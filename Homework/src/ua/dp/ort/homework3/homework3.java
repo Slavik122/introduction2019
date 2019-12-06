@@ -12,9 +12,11 @@ public class homework3 {
 //		System.out.println(num2 * num1);
 //		System.out.println(num2 / num1);
 //		2)
-//		double number = 5;
-//		double degrees = 5;
-//		System.out.println(Math.pow(number, degrees));
+		double number = 5;
+		double degrees = 5;
+		double result = 5 * 5 * 5 * 5 * 5;
+		System.out.println(result);
+		System.out.println(Math.pow(number, degrees));
 //		3)
 //		int x = 2;
 //		int y = 2 * x + 5;
