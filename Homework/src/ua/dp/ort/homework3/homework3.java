@@ -64,11 +64,13 @@ public class homework3 {
 //		int bite4 = 0b0000_0000_0001;
 //		System.out.println(bite3 & bite4);
 //		int bite5 = 0b0000_1010_0101;
-//		System.out.println(Integer.bitCount(bite5));
-		int bite6 = 0b0000_0001_1001;
-		int bite7 = 0b0000_1111_1111;
-		System.out.println(bite6 & bite7);
-      
+//		int bite6 = 0b0000_1111_1111;
+//		System.out.println(Integer.toBinaryString(bite5 & bite6));
+//		int bite7 = 0b0000_0001_1001;
+//		int bite8 = 0b0000_1111_1111;
+//		System.out.println(Integer.toBinaryString(~bite7 & bite8));
+//		
+
 		
 
 		
