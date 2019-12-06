@@ -5,16 +5,16 @@ public class homework3 {
 	public static void main(String[] args) {
 		
 //		1)
-//		int a = 5;
-//		int b = 10;
-//		System.out.println(b + a);
-//		System.out.println(b - a);
-//		System.out.println(b * a);
-//		System.out.println(b / a);
+//		int num1 = 5;
+//		int num2 = 10;
+//		System.out.println(num2 + num1);
+//		System.out.println(num2 - num1);
+//		System.out.println(num2 * num1);
+//		System.out.println(num2 / num1);
 //		2)
-//		double a1 = 5;
-//		double a2 = 5;
-//		System.out.println(Math.pow(a1, a2));
+//		double number = 5;
+//		double degrees = 5;
+//		System.out.println(Math.pow(number, degrees));
 //		3)
 //		int x = 2;
 //		int y = 2 * x + 5;
@@ -23,10 +23,10 @@ public class homework3 {
 //		double y1 = 2 * x1 + 5;
 //		System.out.println(y1);
 //		4)
-//		double x = 4.5;
-//		double y = 3.1;
-//		System.out.println(x * y + " m^2");
-//		System.out.println(Math.floor(x * y) + " m^2");
+//		double width = 4.5;
+//		double height = 3.1;
+//		System.out.println( width * height + " m^2");
+//		System.out.println(Math.floor( width * height ) + " m^2");
 //		5)
 //		double apples = 11;
 //		double children = 3;
@@ -42,10 +42,10 @@ public class homework3 {
 //		double totalJumps = (distance / frogJump);
 //		System.out.println(Math.floor(totalJumps));
 //		7)
-//		int a = 1999999999;
-//		int b = 1999999999;
-//		int c = a + b;
-//		System.out.println(Math.rint(c));
+//		int aa = 1999999999;
+//		int bb = 1999999999;
+//		int cc = aa + bb;
+//		System.out.println(Math.rint(cc));
 //		8)
 //		int numeral = 435679;
 //		int a = numeral / 100000;
@@ -57,15 +57,18 @@ public class homework3 {
 //		int sum = a + b + c + d + e + f;
 //		System.out.println(sum);		
 //		9)
-//		int a = 0b0000_1111_1111;
-//		int b = 0b0000_0000_0000;
-//		System.out.println(a & b);
-//		int a1 = 0b0000_1111_1111;
-//		int b1 = 0b0000_0000_0001;
-//		System.out.println(a1 & b1);
-//		int a2 = 0b0000_1010_0101;
-//		System.out.println(Integer.bitCount(a2));
-//		10)
+//		int bite1 = 0b0000_1111_1111;
+//		int bite2 = 0b0000_0000_0000;
+//		System.out.println(bite1 & bite2);
+//		int bite3 = 0b0000_1111_1111;
+//		int bite4 = 0b0000_0000_0001;
+//		System.out.println(bite3 & bite4);
+//		int bite5 = 0b0000_1010_0101;
+//		System.out.println(Integer.bitCount(bite5));
+		int bite6 = 0b0000_0001_1001;
+		int bite7 = 0b0000_1111_1111;
+		System.out.println(bite6 & bite7);
+      
 		
 
 		
