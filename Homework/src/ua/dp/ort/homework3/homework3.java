@@ -43,9 +43,9 @@ public class homework3 {
 //		double totalJumps = ( halfDistance / frogJump);
 //		System.out.println(Math.floor(totalJumps));
 //		7)
-//		long aa = 1999999999;
-//		long bb = 1999999999;
-//		long cc = aa + bb;
+//		int aa = 1999999999;
+//		int bb = 1999999999;
+//		long cc = ((long)aa + bb);
 //		System.out.println(cc);
 //		8)
 //		int numeral = 435679;
