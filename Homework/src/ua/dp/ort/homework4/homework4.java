@@ -20,34 +20,34 @@ public class homework4 {
 //		System.out.println("Your result = " + result);
 
 //		2)
-		String analyzer;
-		System.out.println("Input random number a:");
-		analyzer = num.nextLine();
-		int number1 = Integer.parseInt(analyzer);
-
-		System.out.println("Input random number b:");
-		analyzer = num.nextLine();
-		int number2 = Integer.parseInt(analyzer);
-
-		if (number1 == number2) {
-			System.out.println("numbers are equal");
-		} else {
-			System.out.println("numbers are different");
-		}
-
-		if (number1 > number2) {
-			System.out.println("number a is greater than number b");
-		}
-		if (number1 < number2){
-			System.out.println("number a are less than number b");
-		}
-
-		if (number1 >= number2) {
-			System.out.println("number a is greater or equal number b");
-		} 
-		if (number1 <= number2){
-			System.out.println("number a are less or equal number b");
-		}
+//		String analyzer;
+//		System.out.println("Input random number a:");
+//		analyzer = num.nextLine();
+//		int number1 = Integer.parseInt(analyzer);
+//
+//		System.out.println("Input random number b:");
+//		analyzer = num.nextLine();
+//		int number2 = Integer.parseInt(analyzer);
+//
+//		if (number1 == number2) {
+//			System.out.println("numbers are equal");
+//		} else {
+//			System.out.println("numbers are different");
+//		}
+//
+//		if (number1 > number2) {
+//			System.out.println("number a is greater than number b");
+//		}
+//		if (number1 < number2){
+//			System.out.println("number a are less than number b");
+//		}
+//
+//		if (number1 >= number2) {
+//			System.out.println("number a is greater or equal number b");
+//		} 
+//		if (number1 <= number2){
+//			System.out.println("number a are less or equal number b");
+//		}
 
 //		3)
 //		String input;
@@ -59,18 +59,11 @@ public class homework4 {
 //		input = num.nextLine();
 //		int width = Integer.parseInt(input);
 //
-//		if (length > width) {
-//			System.out.println("It's reqtangle");
-//		}
-//
-//		if (length < width) {
-//			System.out.println("It's reqtangle too");
-//		}
-//
 //		if (length == width) {
 //			System.out.println("It's square");
+//		} else {
+//			System.out.println("It's rectangle");
 //		}
-
 	}
 
 }
