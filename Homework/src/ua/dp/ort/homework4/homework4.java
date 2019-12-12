@@ -7,17 +7,17 @@ public class homework4 {
 	public static void main(String[] args) {
 		Scanner num = new Scanner(System.in);
 //		1)
-		String userInput;
-		System.out.println("Input number for side a: ");
-		userInput = num.nextLine();
-		int a = Integer.parseInt(userInput);
-
-		System.out.println("Input number for side b: ");
-		userInput = num.nextLine();
-		int b = Integer.parseInt(userInput);
-
-		int result = a * b;
-		System.out.println("Your result = " + result);
+//		String userInput;
+//		System.out.println("Input number for side a: ");
+//		userInput = num.nextLine();
+//		int a = Integer.parseInt(userInput);
+//
+//		System.out.println("Input number for side b: ");
+//		userInput = num.nextLine();
+//		int b = Integer.parseInt(userInput);
+//
+//		int result = a * b;
+//		System.out.println("Your result = " + result);
 
 //		2)
 		String analyzer;
@@ -38,37 +38,38 @@ public class homework4 {
 		if (number1 > number2) {
 			System.out.println("number a is greater than number b");
 		}
-		if (number1 < number2) {
+		if (number1 < number2){
 			System.out.println("number a are less than number b");
 		}
 
 		if (number1 >= number2) {
 			System.out.println("number a is greater or equal number b");
-		} else {
+		} 
+		if (number1 <= number2){
 			System.out.println("number a are less or equal number b");
 		}
 
 //		3)
-		String input;
-		System.out.println("Input length of figure:");
-		input = num.nextLine();
-		int length = Integer.parseInt(input);
-
-		System.out.println("Input width of figure :");
-		input = num.nextLine();
-		int width = Integer.parseInt(input);
-
-		if (length > width) {
-			System.out.println("It's reqtangle");
-		}
-
-		if (length < width) {
-			System.out.println("It's reqtangle too");
-		}
-
-		if (length == width) {
-			System.out.println("It's square");
-		}
+//		String input;
+//		System.out.println("Input length of figure:");
+//		input = num.nextLine();
+//		int length = Integer.parseInt(input);
+//
+//		System.out.println("Input width of figure :");
+//		input = num.nextLine();
+//		int width = Integer.parseInt(input);
+//
+//		if (length > width) {
+//			System.out.println("It's reqtangle");
+//		}
+//
+//		if (length < width) {
+//			System.out.println("It's reqtangle too");
+//		}
+//
+//		if (length == width) {
+//			System.out.println("It's square");
+//		}
 
 	}
 
