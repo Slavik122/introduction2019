@@ -261,6 +261,7 @@ public class homework5_1 {
 			}
 		}
 
+		scanner.close();
 	}
 
 }
