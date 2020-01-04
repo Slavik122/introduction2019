@@ -41,12 +41,12 @@ public class homework5_1 {
 			volumeFuel = money / A_95 * 1000;
 			int x = (int) Math.round(volumeFuel);
 			volumeFuel = (double) x / 1000;
-			System.out.println("You can fill up - " + volumeFuel + " liters");
-
+			
 			double discount;
 			double discountPrice;
 			if (volumeFuel <= 10) {
-				System.out.println("You don't have a discount");
+				System.out.println("You don't have a discount"
+						+ "\nYou can buy " + volumeFuel + " liters");
 			} else if ((volumeFuel >= 10) && (volumeFuel <= 20)) {
 				discount = A_95 * (DISCOUNT_1 / 100);
 				discountPrice = A_95 - discount;
@@ -98,12 +98,12 @@ public class homework5_1 {
 			volumeFuel = money / A_92 * 1000;
 			int x = (int) Math.round(volumeFuel);
 			volumeFuel = (double) x / 1000;
-			System.out.println("You can fill up - " + volumeFuel + " liters");
 
 			double discount;
 			double discountPrice;
 			if (volumeFuel <= 10) {
-				System.out.println("You don't have a discount");
+				System.out.println("You don't have a discount"
+						+ "\nYou can buy " + volumeFuel + " liters");
 			} else if ((volumeFuel >= 10) && (volumeFuel <= 20)) {
 				discount = A_92 * (DISCOUNT_1 / 100);
 				discountPrice = A_92 - discount;
@@ -155,12 +155,12 @@ public class homework5_1 {
 			volumeFuel = money / GAS * 1000;
 			int x = (int) Math.round(volumeFuel);
 			volumeFuel = (double) x / 1000;
-			System.out.println("You can fill up - " + volumeFuel + " liters");
 
 			double discount;
 			double discountPrice;
 			if (volumeFuel <= 10) {
-				System.out.println("You don't have a discount");
+				System.out.println("You don't have a discount"
+						+ "\nYou can buy " + volumeFuel + " liters");
 			} else if ((volumeFuel >= 10) && (volumeFuel <= 20)) {
 				discount = GAS * (DISCOUNT_1 / 100);
 				discountPrice = GAS - discount;
@@ -212,12 +212,12 @@ public class homework5_1 {
 			volumeFuel = money / DIESEL_FUEL * 1000;
 			int x = (int) Math.round(volumeFuel);
 			volumeFuel = (double) x / 1000;
-			System.out.println("You can fill up - " + volumeFuel + " liters");
 
 			double discount;
 			double discountPrice;
 			if (volumeFuel <= 10) {
-				System.out.println("You don't have a discount");
+				System.out.println("You don't have a discount"
+						+ "\nYou can buy " + volumeFuel + " liters");
 			} else if ((volumeFuel >= 10) && (volumeFuel <= 20)) {
 				discount = DIESEL_FUEL * (DISCOUNT_1 / 100);
 				discountPrice = DIESEL_FUEL - discount;
