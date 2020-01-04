@@ -38,7 +38,6 @@ public class homework5_1 {
 			userMoney = scanner.nextLine();
 			double money = Double.parseDouble(userMoney);
 
-//			ѕроцес вычислени€ сколько можно заправить литров , а потом идет округление до сотых
 			volumeFuel = money / A_95 * 100;
 			int x = (int) Math.round(volumeFuel);
 			volumeFuel = (double) x / 100;
