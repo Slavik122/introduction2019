@@ -9,10 +9,10 @@ public class homework5_1 {
 	public static final double PRICE_GAS = 11.25;
 	public static final double PRICE_DIESEL_FUEL = 18.44;
 
-	public static final int NUMBER_A_95 = 1;
-	public static final int NUMBER_A_92 = 2;
-	public static final int NUMBER_GAS = 3;
-	public static final int NUMBER_DIESEL_FUEL = 4;
+	public static final int USER_CHOISE_A_95 = 1;
+	public static final int USER_CHOISE_A_92 = 2;
+	public static final int USER_CHOISE_GAS = 3;
+	public static final int USER_CHOISE_DIESEL_FUEL = 4;
 
 	public static final double DISCOUNT_FROM_10_TO_20_LITERS = 0.5;
 	public static final double DISCOUNT_FROM_20_TO_50_LITERS = 1;
@@ -31,7 +31,7 @@ public class homework5_1 {
 
 		String userMoney;
 		double volumeFuel;
-		if (fuel == NUMBER_A_95) {
+		if (fuel == USER_CHOISE_A_95) {
 			System.out.println("This fuel cost - " + PRICE_A_95);
 
 			System.out.print("Input your amount of money -> ");
@@ -87,7 +87,7 @@ public class homework5_1 {
 				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
 						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
-		} else if (fuel == NUMBER_A_92) {
+		} else if (fuel == USER_CHOISE_A_92) {
 			System.out.println("This fuel cost - " + PRICE_A_92);
 
 			System.out.print("Input your amount of money -> ");
@@ -143,7 +143,7 @@ public class homework5_1 {
 				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
 						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
-		} else if (fuel == NUMBER_GAS) {
+		} else if (fuel == USER_CHOISE_GAS) {
 			System.out.println("This fuel cost - " + PRICE_GAS);
 
 			System.out.print("Input your amount of money -> ");
@@ -199,7 +199,7 @@ public class homework5_1 {
 				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
 						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
-		} else if (fuel == NUMBER_DIESEL_FUEL) {
+		} else if (fuel == USER_CHOISE_DIESEL_FUEL) {
 			System.out.println("This fuel cost - " + PRICE_DIESEL_FUEL);
 
 			System.out.print("Input your amount of money -> ");
