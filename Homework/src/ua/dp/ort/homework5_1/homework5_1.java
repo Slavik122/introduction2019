@@ -23,24 +23,23 @@ public class homework5_1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
+		String userMoney;
+
+		System.out.print("Input your amount of money -> ");
+		userMoney = scanner.nextLine();
+		double money = Double.parseDouble(userMoney);
+
 		String userFuel;
 		System.out.println(
 				"Choose fuel" + "\n" + "1 - 95" + "\n" + "2 - 92" + "\n" + "3 - Gas" + "\n" + "4 - Diesel fuel");
 		userFuel = scanner.nextLine();
 		int fuel = Integer.parseInt(userFuel);
 
-		String userMoney;
 		double volumeFuel;
 		if (fuel == USER_CHOISE_A_95) {
 			System.out.println("This fuel cost - " + PRICE_A_95);
 
-			System.out.print("Input your amount of money -> ");
-			userMoney = scanner.nextLine();
-			double money = Double.parseDouble(userMoney);
-
-			volumeFuel = money / PRICE_A_95 * 100;
-			int x = (int) Math.round(volumeFuel);
-			volumeFuel = (double) x / 100;
+			volumeFuel = money / PRICE_A_95;
 
 			double discount;
 			double discountPrice;
@@ -90,13 +89,7 @@ public class homework5_1 {
 		} else if (fuel == USER_CHOISE_A_92) {
 			System.out.println("This fuel cost - " + PRICE_A_92);
 
-			System.out.print("Input your amount of money -> ");
-			userMoney = scanner.nextLine();
-			double money = Double.parseDouble(userMoney);
-
-			volumeFuel = money / PRICE_A_92 * 100;
-			int x = (int) Math.round(volumeFuel);
-			volumeFuel = (double) x / 100;
+			volumeFuel = money / PRICE_A_92;
 
 			double discount;
 			double discountPrice;
@@ -146,13 +139,7 @@ public class homework5_1 {
 		} else if (fuel == USER_CHOISE_GAS) {
 			System.out.println("This fuel cost - " + PRICE_GAS);
 
-			System.out.print("Input your amount of money -> ");
-			userMoney = scanner.nextLine();
-			double money = Double.parseDouble(userMoney);
-
-			volumeFuel = money / PRICE_GAS * 100;
-			int x = (int) Math.round(volumeFuel);
-			volumeFuel = (double) x / 100;
+			volumeFuel = money / PRICE_GAS;
 
 			double discount;
 			double discountPrice;
@@ -202,13 +189,7 @@ public class homework5_1 {
 		} else if (fuel == USER_CHOISE_DIESEL_FUEL) {
 			System.out.println("This fuel cost - " + PRICE_DIESEL_FUEL);
 
-			System.out.print("Input your amount of money -> ");
-			userMoney = scanner.nextLine();
-			double money = Double.parseDouble(userMoney);
-
-			volumeFuel = money / PRICE_DIESEL_FUEL * 100;
-			int x = (int) Math.round(volumeFuel);
-			volumeFuel = (double) x / 100;
+			volumeFuel = money / PRICE_DIESEL_FUEL;
 
 			double discount;
 			double discountPrice;
