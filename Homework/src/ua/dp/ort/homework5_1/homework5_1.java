@@ -38,7 +38,7 @@ public class homework5_1 {
 			userMoney = scanner.nextLine();
 			double money = Double.parseDouble(userMoney);
 
-			volumeFuel = money /  PRICE_A_95 * 100;
+			volumeFuel = money / PRICE_A_95 * 100;
 			int x = (int) Math.round(volumeFuel);
 			volumeFuel = (double) x / 100;
 
@@ -47,45 +47,45 @@ public class homework5_1 {
 			if (volumeFuel <= 10) {
 				System.out.println("You don't have a discount" + "\nYou can buy " + volumeFuel + " liters");
 			} else if ((volumeFuel >= 10) && (volumeFuel <= 20)) {
-				discount =  PRICE_A_95 * (DISCOUNT_FROM_10_TO_20_LITERS / 100);
-				discountPrice =  PRICE_A_95 - discount;
+				discount = PRICE_A_95 * (DISCOUNT_FROM_10_TO_20_LITERS / 100);
+				discountPrice = PRICE_A_95 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_10_TO_20_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_10_TO_20_LITERS);
 			} else if ((volumeFuel >= 20) && (volumeFuel <= 50)) {
-				discount =  PRICE_A_95 * (DISCOUNT_FROM_20_TO_50_LITERS / 100);
-				discountPrice =  PRICE_A_95 - discount;
+				discount = PRICE_A_95 * (DISCOUNT_FROM_20_TO_50_LITERS / 100);
+				discountPrice = PRICE_A_95 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_20_TO_50_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_20_TO_50_LITERS);
 			} else if ((volumeFuel >= 50) && (volumeFuel <= 100)) {
 				discount = PRICE_A_95 * (DISCOUNT_FROM_50_TO_100_LITERS / 100);
 				discountPrice = PRICE_A_95 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_50_TO_100_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_50_TO_100_LITERS);
 			} else if ((volumeFuel >= 100) && (volumeFuel <= 500)) {
-				discount =  PRICE_A_95 * (DISCOUNT_FROM_100_TO_500_LITERS / 100);
-				discountPrice =  PRICE_A_95 - discount;
+				discount = PRICE_A_95 * (DISCOUNT_FROM_100_TO_500_LITERS / 100);
+				discountPrice = PRICE_A_95 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_100_TO_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_100_TO_500_LITERS);
 			} else if (volumeFuel > 500) {
-				discount =  PRICE_A_95 * (DISCOUNT_MORE_THAT_500_LITERS / 100);
-				discountPrice =  PRICE_A_95 - discount;
+				discount = PRICE_A_95 * (DISCOUNT_MORE_THAT_500_LITERS / 100);
+				discountPrice = PRICE_A_95 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_MORE_THAT_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
 		} else if (fuel == NUMBER_A_92) {
 			System.out.println("This fuel cost - " + PRICE_A_92);
@@ -108,40 +108,40 @@ public class homework5_1 {
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_10_TO_20_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_10_TO_20_LITERS);
 			} else if ((volumeFuel >= 20) && (volumeFuel <= 50)) {
 				discount = PRICE_A_92 * (DISCOUNT_FROM_20_TO_50_LITERS / 100);
 				discountPrice = PRICE_A_92 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_20_TO_50_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_20_TO_50_LITERS);
 			} else if ((volumeFuel >= 50) && (volumeFuel <= 100)) {
 				discount = PRICE_A_92 * (DISCOUNT_FROM_50_TO_100_LITERS / 100);
 				discountPrice = PRICE_A_92 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_50_TO_100_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_50_TO_100_LITERS);
 			} else if ((volumeFuel >= 100) && (volumeFuel <= 500)) {
 				discount = PRICE_A_92 * (DISCOUNT_FROM_100_TO_500_LITERS / 100);
 				discountPrice = PRICE_A_92 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_100_TO_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_100_TO_500_LITERS);
 			} else if (volumeFuel > 500) {
 				discount = PRICE_A_92 * (DISCOUNT_MORE_THAT_500_LITERS / 100);
 				discountPrice = PRICE_A_92 - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_MORE_THAT_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
 		} else if (fuel == NUMBER_GAS) {
 			System.out.println("This fuel cost - " + PRICE_GAS);
@@ -164,40 +164,40 @@ public class homework5_1 {
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_10_TO_20_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_10_TO_20_LITERS);
 			} else if ((volumeFuel >= 20) && (volumeFuel <= 50)) {
 				discount = PRICE_GAS * (DISCOUNT_FROM_20_TO_50_LITERS / 100);
 				discountPrice = PRICE_GAS - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_20_TO_50_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_20_TO_50_LITERS);
 			} else if ((volumeFuel >= 50) && (volumeFuel <= 100)) {
-				discount = PRICE_GAS * (DISCOUNT_FROM_50_TO_100_LITERS/ 100);
+				discount = PRICE_GAS * (DISCOUNT_FROM_50_TO_100_LITERS / 100);
 				discountPrice = PRICE_GAS - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_50_TO_100_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_50_TO_100_LITERS);
 			} else if ((volumeFuel >= 100) && (volumeFuel <= 500)) {
 				discount = PRICE_GAS * (DISCOUNT_FROM_100_TO_500_LITERS / 100);
 				discountPrice = PRICE_GAS - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_100_TO_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_100_TO_500_LITERS);
 			} else if (volumeFuel > 500) {
 				discount = PRICE_GAS * (DISCOUNT_MORE_THAT_500_LITERS / 100);
 				discountPrice = PRICE_GAS - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_MORE_THAT_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
 		} else if (fuel == NUMBER_DIESEL_FUEL) {
 			System.out.println("This fuel cost - " + PRICE_DIESEL_FUEL);
@@ -220,40 +220,40 @@ public class homework5_1 {
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_10_TO_20_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_10_TO_20_LITERS);
 			} else if ((volumeFuel >= 20) && (volumeFuel <= 50)) {
 				discount = PRICE_DIESEL_FUEL * (DISCOUNT_FROM_20_TO_50_LITERS / 100);
 				discountPrice = PRICE_DIESEL_FUEL - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_20_TO_50_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_20_TO_50_LITERS);
 			} else if ((volumeFuel >= 50) && (volumeFuel <= 100)) {
 				discount = PRICE_DIESEL_FUEL * (DISCOUNT_FROM_50_TO_100_LITERS / 100);
 				discountPrice = PRICE_DIESEL_FUEL - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_50_TO_100_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_50_TO_100_LITERS);
 			} else if ((volumeFuel >= 100) && (volumeFuel <= 500)) {
 				discount = PRICE_DIESEL_FUEL * (DISCOUNT_FROM_100_TO_500_LITERS / 100);
 				discountPrice = PRICE_DIESEL_FUEL - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_FROM_100_TO_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_FROM_100_TO_500_LITERS);
 			} else if (volumeFuel > 500) {
 				discount = PRICE_DIESEL_FUEL * (DISCOUNT_MORE_THAT_500_LITERS / 100);
 				discountPrice = PRICE_DIESEL_FUEL - discount;
 				volumeFuel = money / discountPrice * 100;
 				int y = (int) Math.round(volumeFuel);
 				volumeFuel = (double) y / 100;
-				System.out.println(
-						"You can buy " + volumeFuel + " liters for " + userMoney + " with discount " + DISCOUNT_MORE_THAT_500_LITERS);
+				System.out.println("You can buy " + volumeFuel + " liters for " + userMoney + " with discount "
+						+ DISCOUNT_MORE_THAT_500_LITERS);
 			}
 		}
 
