@@ -2,6 +2,7 @@ package ua.dp.ort.Homework_6;
 
 import java.util.Scanner;
 
+
 public class Homework_6 {
 
 	public static void main(String[] args) {
