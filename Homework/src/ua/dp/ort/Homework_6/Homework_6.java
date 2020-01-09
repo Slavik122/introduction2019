@@ -11,25 +11,30 @@ public class Homework_6 {
 		double portions = 0.0;
 		double clientVolume = 0.0;
 
-		double volume, fuel, clientVolumeFuel;
+		double volume = 0, fuel = 0, clientVolumeFuel = 0;
+		
+		boolean Boolean = true;
 
-		while (true) {
+		while (Boolean) {
 			System.out.print("Input overall volume: ");
 			String overallVolume = sc.nextLine();
 			volume = Double.parseDouble(overallVolume);
 
-			if (volume < 0) {
-				System.out.println("it's can not be negative number");
+			if (volume < 1000) {
+				System.out.println("it's less than minimum");
+				Boolean = false;
+				break;
 			} else {
 				allVolume = volume;
 				break;
 			}
 		}
-		while (true) {
+		while (Boolean) {
 			System.out.print("Input how many milliliters in one portion of fuel: ");
 			String fuelPortions = sc.nextLine();
 			fuel = Double.parseDouble(fuelPortions);
 			fuel = fuel / 1000;
+			
 			if (fuel < 0) {
 				System.out.println("it's can not be negative number");
 			} else {
@@ -37,13 +42,13 @@ public class Homework_6 {
 				break;
 			}
 		}
-		while (true) {
+		while (Boolean) {
 			System.out.print("Input your volume: ");
 			String clientFuel = sc.nextLine();
 			clientVolumeFuel = Double.parseDouble(clientFuel);
+			
 			if ((clientVolumeFuel < 0) || (clientVolumeFuel > volume)) {
-				System.out.println("Unfortunately we do not have enough fuel equale your. Come later.");
-				break;
+				System.out.println("it's can not be negative number or bigger than minimum");
 			} else {
 				clientVolume = clientVolumeFuel;
 				break;
