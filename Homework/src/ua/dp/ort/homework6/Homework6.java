@@ -2,10 +2,10 @@ package ua.dp.ort.homework6;
 
 import java.util.Scanner;
 
-public class homework6 {
+public class Homework6 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		double allVolume = 0.0;
 		double portions = 0.0;
