@@ -15,23 +15,18 @@ public class Homework_6 {
 
 		double volume = 0, fuel = 0, clientVolumeFuel = 0;
 
-		boolean booleanTrueFalse = true;
-
-		while (booleanTrueFalse) {
+		while (true) {
 			System.out.print("Input overall volume: ");
 			String overallVolume = sc.nextLine();
 			volume = Double.parseDouble(overallVolume);
 
 			if (volume < VOLUME_OF_TANK) {
 				System.out.println("it's less than minimum");
-				booleanTrueFalse = false;
 				break;
 			} else {
 				allVolume = volume;
-				break;
 			}
-		}
-		while (booleanTrueFalse) {
+			
 			System.out.print("Input how many milliliters in one portion of fuel: ");
 			String fuelPortions = sc.nextLine();
 			fuel = Double.parseDouble(fuelPortions);
@@ -39,24 +34,24 @@ public class Homework_6 {
 
 			if (fuel < 0) {
 				System.out.println("it's can not be negative number");
+				break;
 			} else {
 				portions = fuel;
-				break;
 			}
-		}
-		while (booleanTrueFalse) {
+			
 			System.out.print("Input your volume: ");
 			String clientFuel = sc.nextLine();
 			clientVolumeFuel = Double.parseDouble(clientFuel);
 
 			if ((clientVolumeFuel < 0) || (clientVolumeFuel > volume)) {
 				System.out.println("it's can not be negative number or bigger than minimum");
+				break;
 			} else {
 				clientVolume = clientVolumeFuel;
+				System.out.println("The remainder of the total volume " + (allVolume - clientVolume) + " liters");
+				System.out.println("Amount of portions " + (clientVolume / portions));
 				break;
 			}
 		}
-		System.out.println("The remainder of the total volume " + (allVolume - clientVolume) + " liters");
-		System.out.println("Amount of portions " + (clientVolume / portions));
 	}
 }
