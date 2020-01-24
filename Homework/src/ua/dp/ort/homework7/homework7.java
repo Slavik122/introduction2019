@@ -8,15 +8,13 @@ public class homework7 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int userArray[] = new int[5];
+		int userArray[] = new int[20];
 
 		String userInput;
 		int sumEvenNumbers = 0;
 		int average = 0;
 		int amountEvenNumbers = 0;
 		int counter;
-
-//		1)
 
 		for (counter = 0; counter < userArray.length;counter++) {
 			System.out.print("Number for array[" + counter + "] -> ");
@@ -25,21 +23,27 @@ public class homework7 {
 
 			userArray[counter] = numberForArray;
 		}
-
-//		2)
-
+		
+//		1)
+		
 		for (counter = 0; counter < userArray.length; counter++) {
 
 			if ((userArray[counter] % 2 == 0) && (userArray[counter] > 0)) {
 				sumEvenNumbers = sumEvenNumbers + userArray[counter];
 			}
-
+			
+//			2)
+			
 			if (userArray[counter] > 0) {
 				amountEvenNumbers++;
 				average = average + userArray[counter];
 			}
 
 		}
+		
+		System.out.println("Sum of all even numbers is -> " + sumEvenNumbers);
+		
+		System.out.println("Average of all positive numbers is -> " + average / amountEvenNumbers);
 
 //		3)
 
@@ -57,39 +61,47 @@ public class homework7 {
 			}
 		}
 
+		System.out.println("Minimum number is -> " + min_1 + ", " + min_2);
+		
 //		4)
 
-//		int minimalNumber = userArray[0];
-//		int minimalCounter = 0;
-//
-//		for (counter = 1; counter < userArray.length; counter++) {
-//			if (minimalNumber > userArray[counter]) {
-//				minimalNumber = userArray[counter];
-//				minimalCounter++;
-//			}
-//		}
-//
-//		int maximalNumber = userArray[0];
-//		int maximalCounter = 0;
-//
-//		for (counter = 1; counter < userArray.length; counter++) {
-//			if (maximalNumber < userArray[counter]) {
-//				maximalNumber = userArray[counter];
-//				maximalCounter++;
-//			}
-//		}
+		int minimalNumber = userArray[0];
+		int minimalCounter = 0;
+
+		for (counter = 1; counter < userArray.length; counter++) {
+			if (minimalNumber > userArray[counter]) {
+				minimalNumber = userArray[counter];
+				minimalCounter++;
+			}
+		}
+
+		int maximalNumber = userArray[0];
+		int maximalCounter = 0;
+
+		for (counter = 1; counter < userArray.length; counter++) {
+			if (maximalNumber < userArray[counter]) {
+				maximalNumber = userArray[counter];
+				maximalCounter++;
+			}
+		}
 		
+		int temp = userArray[minimalCounter];
+		userArray[minimalCounter] = userArray[maximalCounter];
+		userArray[maximalCounter] = temp;
 		
+		System.out.println("Array where minimal and maximal numbers changed places -> " + Arrays.toString(userArray));
 
 //		5)
 
 		int sizeArray = userArray.length;
 
-		for (counter = 0; counter < sizeArray / 2; counter++) {
-			int tempArray = userArray[counter];
-			userArray[counter] = userArray[sizeArray - 1 - counter];
-			userArray[sizeArray - 1 - counter] = tempArray;
+		for (int counter_1 = 0; counter_1 < sizeArray / 2; counter_1++) {
+			int tempArray = userArray[counter_1];
+			userArray[counter_1] = userArray[sizeArray - 1 - counter_1];
+			userArray[sizeArray - 1 - counter_1] = tempArray;
 		}
+		
+		System.out.println("Array after reverse: " + Arrays.toString(userArray));
 
 //		6)
 
@@ -127,11 +139,6 @@ public class homework7 {
 				index_2++;
 			}
 		}
-
-		System.out.println("Sum of all even numbers is -> " + sumEvenNumbers);
-		System.out.println("Average of all positive numbers is -> " + average / amountEvenNumbers);
-		System.out.println("Minimum number is -> " + min_1 + ", " + min_2);
-		System.out.println("Array after reverse: " + Arrays.toString(userArray));
 		System.out.println("All negative numbers from first array " + Arrays.toString(negativeNumbersArray));
 		System.out.println("All positive numbers from first array " + Arrays.toString(positiveNumbersArray));
 	}
