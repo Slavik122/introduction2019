@@ -59,25 +59,25 @@ public class homework7 {
 
 //		4)
 
-		int minimalNumber = userArray[0];
-		int minimalCounter = 0;
-
-		for (counter = 1; counter < userArray.length; counter++) {
-			if (minimalNumber > userArray[counter]) {
-				minimalNumber = userArray[counter];
-				minimalCounter++;
-			}
-		}
-
-		int maximalNumber = userArray[0];
-		int maximalCounter = 0;
-
-		for (counter = 1; counter < userArray.length; counter++) {
-			if (maximalNumber < userArray[counter]) {
-				maximalNumber = userArray[counter];
-				maximalCounter++;
-			}
-		}
+//		int minimalNumber = userArray[0];
+//		int minimalCounter = 0;
+//
+//		for (counter = 1; counter < userArray.length; counter++) {
+//			if (minimalNumber > userArray[counter]) {
+//				minimalNumber = userArray[counter];
+//				minimalCounter++;
+//			}
+//		}
+//
+//		int maximalNumber = userArray[0];
+//		int maximalCounter = 0;
+//
+//		for (counter = 1; counter < userArray.length; counter++) {
+//			if (maximalNumber < userArray[counter]) {
+//				maximalNumber = userArray[counter];
+//				maximalCounter++;
+//			}
+//		}
 		
 		
 
