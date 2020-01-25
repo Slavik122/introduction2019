@@ -69,12 +69,8 @@ public class homework7 {
 		System.out.println("Minimum number is -> " + min_1 + ", " + min_2);
 
 //
-		int[] copyUserArray = new int [userArray.length];
+		int[] copyUserArray = Arrays.copyOf(userArray, userArray.length);
 		
-		for (counter = 0; counter < userArray.length; counter++) {
-			copyUserArray[counter] = userArray[counter];
-		}
-
 //		
 		
 //		4)
