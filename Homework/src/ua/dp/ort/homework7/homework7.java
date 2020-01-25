@@ -109,10 +109,10 @@ public class homework7 {
 
 		int sizeArray = userArray.length;
 
-		for (int counter_1 = 0; counter_1 < sizeArray / 2; counter_1++) {
-			int tempArray = userArray[counter_1];
-			userArray[counter_1] = userArray[sizeArray - 1 - counter_1];
-			userArray[sizeArray - 1 - counter_1] = tempArray;
+		for (counter = 0; counter < sizeArray / 2; counter++) {
+			int tempArray = userArray[counter];
+			userArray[counter] = userArray[sizeArray - 1 - counter];
+			userArray[sizeArray - 1 - counter] = tempArray;
 		}
 
 		System.out.println("Array after reverse: " + Arrays.toString(userArray));
