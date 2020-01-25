@@ -8,7 +8,7 @@ public class homework7 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int userArray[] = new int[5];
+		int userArray[] = new int[20];
 
 		String userInput;
 		int sumEvenNumbers = 0;
@@ -75,7 +75,7 @@ public class homework7 {
 		
 //		4)
 
-		int minimalNumber = userArray[0];
+		int minimalNumber = copyUserArray[0];
 		int minimalCounter = 0;
 
 		for (counter = 1; counter < copyUserArray.length; counter++) {
@@ -85,7 +85,7 @@ public class homework7 {
 			}
 		}
 
-		int maximalNumber = userArray[0];
+		int maximalNumber = copyUserArray[0];
 		int maximalCounter = 0;
 
 		for (counter = 1; counter < copyUserArray.length; counter++) {
