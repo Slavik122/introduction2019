@@ -13,6 +13,7 @@ public class homework7_1_1 {
 		Scanner scanner = new Scanner(System.in);
 
 		String userInput;
+		
 		System.out.print("Please input massiv's length -> ");
 		userInput = scanner.nextLine();
 		int size = Integer.parseInt(userInput);
