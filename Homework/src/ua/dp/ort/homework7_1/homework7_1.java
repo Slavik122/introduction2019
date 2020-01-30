@@ -37,7 +37,7 @@ public class homework7_1 {
 				massiv[counter] = massiv[massiv.length - 1 - counter];
 				massiv[massiv.length - 1 - counter] = temp;
 				amountOfVisits++;
-				
+
 				if (rotations == amountOfVisits) {
 					cycle = false;
 					break;
