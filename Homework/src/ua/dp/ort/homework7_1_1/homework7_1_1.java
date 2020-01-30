@@ -9,6 +9,7 @@ public class homework7_1_1 {
 
 		int counter;
 		int amountOfVisits = 0;
+
 		Scanner scanner = new Scanner(System.in);
 
 		String userInput;
