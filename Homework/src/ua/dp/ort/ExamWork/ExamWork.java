@@ -10,7 +10,7 @@ public class ExamWork {
 		return userSymbol = scanner.nextLine();
 	}
 
-	public static int getUserInput(Scanner scanner) {
+	public static int getUserCoordinates(Scanner scanner) {
 		String userInput = scanner.nextLine();
 		return Integer.parseInt(userInput);
 	}
@@ -23,10 +23,10 @@ public class ExamWork {
 		String fieldView = getUserSymbol(scanner);
 
 		System.out.print("Please, input length -> ");
-		int fieldLength = getUserInput(scanner);
+		int fieldLength = getUserCoordinates(scanner);
 
 		System.out.print("Please, input width -> ");
-		int fieldWidth = getUserInput(scanner);
+		int fieldWidth = getUserCoordinates(scanner);
 
 		String[][] array = new String[fieldLength][fieldWidth];
 
