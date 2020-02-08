@@ -8,11 +8,13 @@ public class homework7_1 {
 	public static void main(String[] args) {
 		int counter;
 		int amountOfVisits = 0;
-		
+		int temp = 0;
+		int previous = 0;
+
 		Scanner scanner = new Scanner(System.in);
 
 		String userInput;
-		
+
 		System.out.print("Please input massiv's length -> ");
 		userInput = scanner.nextLine();
 		int size = Integer.parseInt(userInput);
@@ -31,21 +33,31 @@ public class homework7_1 {
 		userInput = scanner.nextLine();
 		int rotations = Integer.parseInt(userInput);
 
-		boolean cycle = true;
-		while (cycle) {
-			for (counter = massiv.length - 1; counter <= massiv.length - 1; counter--) {
-				int temp = massiv[counter];
-				massiv[counter] = massiv[massiv.length - 1 - counter];
-				massiv[massiv.length - 1 - counter] = temp;
-				amountOfVisits++;
+		if (rotations == 0) {
+			System.out.println("Massiv after rotations -> " + Arrays.toString(massiv));
+		} else {
+			boolean cycle = true;
+			while (cycle) {
+				for (counter = 0; counter < massiv.length; counter++) {
+					previous = massiv[massiv.length - 1];
 
-				if (rotations == amountOfVisits) {
-					cycle = false;
-					break;
+					for (int counter_2 = 0; counter_2 < massiv.length; counter_2++)
+						if ((temp <= massiv[counter_2]) || (temp > massiv[counter_2])) {
+							temp = massiv[counter_2];
+							massiv[counter_2] = previous;
+							previous = temp;
+						}
+					amountOfVisits++;
+
+					if (rotations == amountOfVisits) {
+						cycle = false;
+						break;
+					}
 				}
 			}
+			System.out.println("Massiv after rotations -> " + Arrays.toString(massiv));
+
 		}
-		System.out.println("Massiv after all rotations -> " + Arrays.toString(massiv));
 
 	}
 
