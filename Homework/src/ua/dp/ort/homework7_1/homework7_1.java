@@ -56,9 +56,6 @@ public class homework7_1 {
 				}
 			}
 			System.out.println("Massiv after rotations -> " + Arrays.toString(massiv));
-
 		}
-
 	}
-
 }
