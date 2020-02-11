@@ -13,7 +13,7 @@ public class ExamWork {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.print("Please, input symbol from which will be consiste field -> ");
 		String fieldView = getUserInput(scanner);
 
@@ -31,7 +31,7 @@ public class ExamWork {
 			System.out.print("Please, input width -> ");
 			String fieldWidth = getUserInput(scanner);
 			int width = Integer.parseInt(fieldWidth);
-			
+
 			if (width < 0) {
 				System.out.println("Please, input only positive numbers");
 				continue;
