@@ -24,7 +24,7 @@ public class ExamWork {
 			int length = Integer.parseInt(fieldLength);
 
 			if (length < 0) {
-				System.out.println("Please, input only positive number");
+				System.out.println("Please, input only positive numbers");
 				continue;
 			}
 
@@ -32,8 +32,8 @@ public class ExamWork {
 			String fieldWidth = getUserInput(scanner);
 			int width = Integer.parseInt(fieldWidth);
 			
-			if (length < 0) {
-				System.out.println("Please, input only positive number");
+			if (width < 0) {
+				System.out.println("Please, input only positive numbers");
 				continue;
 			}
 
