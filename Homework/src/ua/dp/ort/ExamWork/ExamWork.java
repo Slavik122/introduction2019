@@ -5,37 +5,48 @@ import java.util.Scanner;
 
 public class ExamWork {
 
-	public static String getUserSymbol(Scanner scanner) {
-		String userSymbol;
-		return userSymbol = scanner.nextLine();
-	}
-
-	public static int getUserCoordinates(Scanner scanner) {
-		String userInput = scanner.nextLine();
-		return Integer.parseInt(userInput);
+	public static String getUserInput(Scanner scanner) {
+		String userInput;
+		return userInput = scanner.nextLine();
 	}
 
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-
+		
 		System.out.print("Please, input symbol from which will be consiste field -> ");
-		String fieldView = getUserSymbol(scanner);
+		String fieldView = getUserInput(scanner);
 
-		System.out.print("Please, input length -> ");
-		int fieldLength = getUserCoordinates(scanner);
+		boolean cycle = true;
+		while (cycle) {
+			System.out.print("Please, input length -> ");
+			String fieldLength = getUserInput(scanner);
+			int length = Integer.parseInt(fieldLength);
 
-		System.out.print("Please, input width -> ");
-		int fieldWidth = getUserCoordinates(scanner);
-
-		String[][] array = new String[fieldLength][fieldWidth];
-
-		for (int lines = 0; lines < array.length; lines++) {
-			for (int columns = 0; columns < array[lines].length; columns++) {
-				array[lines][columns] = fieldView;
-				System.out.print(" " + array[lines][columns]);
+			if (length < 0) {
+				System.out.println("Please, input only positive number");
+				continue;
 			}
-			System.out.println();
+
+			System.out.print("Please, input width -> ");
+			String fieldWidth = getUserInput(scanner);
+			int width = Integer.parseInt(fieldWidth);
+			
+			if (length < 0) {
+				System.out.println("Please, input only positive number");
+				continue;
+			}
+
+			String[][] field = new String[length][width];
+
+			for (int lines = 0; lines < field.length; lines++) {
+				for (int columns = 0; columns < field[lines].length; columns++) {
+					field[lines][columns] = fieldView;
+					System.out.print(" " + field[lines][columns]);
+				}
+				System.out.println();
+			}
+			cycle = false;
 		}
 	}
 }
