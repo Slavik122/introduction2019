@@ -27,7 +27,7 @@ public class homework7_1 {
 			int numberForMassiv = Integer.parseInt(userInput);
 			massiv[counter] = numberForMassiv;
 		}
-		
+
 		System.out.println("Massiv before rotations " + Arrays.toString(massiv));
 
 		System.out.print("Please input amount of rotations -> ");
@@ -36,11 +36,14 @@ public class homework7_1 {
 
 		if (rotations == 0) {
 			System.out.println("Massiv after rotations -> " + Arrays.toString(massiv));
-			
 		} else {
 			boolean cycle = true;
 			while (cycle) {
-				
+
+				if (rotations > massiv.length) {
+					rotations = rotations % massiv.length;
+				}
+
 				for (counter = 0; counter < massiv.length; counter++) {
 					previous = massiv[massiv.length - 1];
 
